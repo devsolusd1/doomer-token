@@ -324,19 +324,23 @@
         }
 
         .links-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            display: flex;
             gap: 14px;
+            justify-content: center;
         }
 
         .link-card {
             display: flex; align-items: center; gap: 12px;
             background: var(--bg-card); border: 1px solid var(--border);
-            border-radius: 10px; padding: 18px 20px;
+            border-radius: 10px; padding: 16px 24px;
             text-decoration: none; transition: all 0.3s;
+            flex: 1; max-width: 200px; justify-content: center;
         }
         .link-card:hover { border-color: #444; transform: translateY(-2px); background: var(--bg-card-hover); }
-        .link-card svg { width: 22px; height: 22px; fill: var(--text-secondary); flex-shrink: 0; }
+        .link-card img.link-icon { width: 26px; height: 26px; flex-shrink: 0; filter: grayscale(100%) brightness(0.6); transition: filter 0.3s; }
+        .link-card:hover img.link-icon { filter: grayscale(100%) brightness(0.9); }
+        .link-card svg { width: 22px; height: 22px; fill: #555; flex-shrink: 0; transition: fill 0.3s; }
+        .link-card:hover svg { fill: #999; }
         .link-card-name { font-family: var(--font-title); font-size: 1rem; color: var(--text-primary); letter-spacing: 1px; }
 
         /* ===== FOOTER ===== */
@@ -471,7 +475,8 @@
             .showcase-row.two, .showcase-row.three,
             .showcase-row.split, .showcase-row.split-reverse { grid-template-columns: 1fr; }
             .showcase-quote { font-size: 1.4rem; }
-            .links-grid { grid-template-columns: 1fr; }
+            .links-grid { flex-direction: column; align-items: center; }
+            .link-card { max-width: 100%; width: 100%; }
             .hero-ca-address { font-size: 0.6rem; }
         }
 
@@ -673,11 +678,11 @@
             <h2 class="links-title">join the void</h2>
             <div class="links-grid">
                 <a href="https://app.printr.money/trade/9UuQsZ6TtETELDvpHSUZBdbVC4dVfUDwUnPP4cTjbrrr" target="_blank" class="link-card">
-                    <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                    <img src="img/logo-printr.png" alt="Printr" class="link-icon">
                     <span class="link-card-name">Printr</span>
                 </a>
                 <a href="https://dexscreener.com/solana/9UuQsZ6TtETELDvpHSUZBdbVC4dVfUDwUnPP4cTjbrrr" target="_blank" class="link-card">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 16l4-8 4 4 4-10"/></svg>
+                    <img src="img/logo-dexscreener.png" alt="Dexscreener" class="link-icon">
                     <span class="link-card-name">Dexscreener</span>
                 </a>
                 <a href="https://x.com/Doomerprintr" target="_blank" class="link-card">
@@ -752,7 +757,7 @@
         {title:"Love of My Life",artist:"Queen",src:"audio/track01.mp3"},
         {title:"Lacrimosa",artist:"Mozart",src:"audio/track02.mp3"},
         {title:"Gymnopedie No. 1",artist:"Erik Satie",src:"audio/track03.mp3"},
-        {title:"Track 04",artist:"Unknown",src:"audio/track04.mp3"},
+        {title:"Hurt",artist:"Johnny Cash - Piano Mario cover",src:"audio/track04.mp3"},
         {title:"Track 05",artist:"Unknown",src:"audio/track05.mp3"},
     ];
     const audio=document.getElementById('bg-music');
