@@ -594,14 +594,14 @@
             <div class="hero-ca" onclick="copyCA()">
                 <div style="flex:1;text-align:left">
                     <div class="hero-ca-label">CA</div>
-                    <div class="hero-ca-address" id="ca-text">CONTRACT_ADDRESS_HERE</div>
+                    <div class="hero-ca-address" id="ca-text">0x76ba7c0ddf1e992dd5b1631e09e17d39a5b3834e</div>
                 </div>
                 <div class="hero-ca-copy" id="ca-copy-label">copy</div>
             </div>
 
             <div class="hero-buttons">
-                <a href="#" target="_blank" class="btn btn-primary">Buy on Uniswap</a>
-                <a href="#" target="_blank" class="btn btn-ghost">Chart</a>
+                <a href="https://app.uniswap.org/swap?outputCurrency=0x76ba7c0ddf1e992dd5b1631e09e17d39a5b3834e" target="_blank" class="btn btn-primary">Buy on Uniswap</a>
+                <a href="https://dexscreener.com/ethereum/0x76ba7c0ddf1e992dd5b1631e09e17d39a5b3834e" target="_blank" class="btn btn-ghost">Chart</a>
             </div>
         </div>
     </section>
@@ -677,11 +677,11 @@
         <div class="links-inner reveal">
             <h2 class="links-title">join the void</h2>
             <div class="links-grid">
-                <a href="#" target="_blank" class="link-card">
+                <a href="https://app.uniswap.org/swap?outputCurrency=0x76ba7c0ddf1e992dd5b1631e09e17d39a5b3834e" target="_blank" class="link-card">
                     <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.17 14.93L7.7 13.8l1.41-1.41 1.72 1.72 4.07-4.07 1.41 1.41-5.48 5.48z"/></svg>
                     <span class="link-card-name">Uniswap</span>
                 </a>
-                <a href="#" target="_blank" class="link-card">
+                <a href="https://dexscreener.com/ethereum/0x76ba7c0ddf1e992dd5b1631e09e17d39a5b3834e" target="_blank" class="link-card">
                     <img src="img/logo-dexscreener.png" alt="Dexscreener" class="link-icon">
                     <span class="link-card-name">Dexscreener</span>
                 </a>
@@ -819,7 +819,7 @@
     buildPlaylist();if(playlist.length>0)loadTrack(0);
 
     // ===== COPY CA =====
-    function copyCA(){navigator.clipboard.writeText('CONTRACT_ADDRESS_HERE').then(()=>{const l=document.getElementById('ca-copy-label');l.textContent='copied!';l.style.color='#4ade80';setTimeout(()=>{l.textContent='copy';l.style.color='';},2000);});}
+    function copyCA(){navigator.clipboard.writeText('0x76ba7c0ddf1e992dd5b1631e09e17d39a5b3834e').then(()=>{const l=document.getElementById('ca-copy-label');l.textContent='copied!';l.style.color='#4ade80';setTimeout(()=>{l.textContent='copy';l.style.color='';},2000);});}
 
     // ===== NAV =====
     let lastScroll=0;
