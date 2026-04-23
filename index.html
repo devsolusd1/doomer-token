@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>$DOOMER | Life is temporary</title>
-    <meta name="description" content="$DOOMER on Solana. Life is temporary, $Doomer is forever.">
-    <meta property="og:title" content="$DOOMER on Solana">
+    <meta name="description" content="$DOOMER on Ethereum. Life is temporary, $Doomer is forever.">
+    <meta property="og:title" content="$DOOMER on Ethereum">
     <meta property="og:description" content="Life is temporary. $Doomer is forever.">
     <meta property="og:image" content="img/doomer-pfp.png">
     <link rel="icon" type="image/png" href="img/doomer-pfp.png">
@@ -594,14 +594,14 @@
             <div class="hero-ca" onclick="copyCA()">
                 <div style="flex:1;text-align:left">
                     <div class="hero-ca-label">CA</div>
-                    <div class="hero-ca-address" id="ca-text">9UuQsZ6TtETELDvpHSUZBdbVC4dVfUDwUnPP4cTjbrrr</div>
+                    <div class="hero-ca-address" id="ca-text">CONTRACT_ADDRESS_HERE</div>
                 </div>
                 <div class="hero-ca-copy" id="ca-copy-label">copy</div>
             </div>
 
             <div class="hero-buttons">
-                <a href="https://app.printr.money/trade/9UuQsZ6TtETELDvpHSUZBdbVC4dVfUDwUnPP4cTjbrrr" target="_blank" class="btn btn-primary">Buy on Printr</a>
-                <a href="https://dexscreener.com/solana/9UuQsZ6TtETELDvpHSUZBdbVC4dVfUDwUnPP4cTjbrrr" target="_blank" class="btn btn-ghost">Chart</a>
+                <a href="#" target="_blank" class="btn btn-primary">Buy on Uniswap</a>
+                <a href="#" target="_blank" class="btn btn-ghost">Chart</a>
             </div>
         </div>
     </section>
@@ -612,7 +612,7 @@
             <span>Doomer</span> isn't just a meme. He's the 2:47 AM stare at the ceiling,
             the walk alone in the rain, the cigarette that tastes like regret.<br>
             He doesn't cope, he doesn't hope — <span>he just exists.</span><br>
-            Now he lives on Solana. Because even in the void, there's a blockchain running.
+            Now he lives on Ethereum. Because even in the void, there's a blockchain running.
         </p>
     </div>
 
@@ -677,17 +677,13 @@
         <div class="links-inner reveal">
             <h2 class="links-title">join the void</h2>
             <div class="links-grid">
-                <a href="https://app.printr.money/trade/9UuQsZ6TtETELDvpHSUZBdbVC4dVfUDwUnPP4cTjbrrr" target="_blank" class="link-card">
-                    <img src="img/logo-printr.png" alt="Printr" class="link-icon">
-                    <span class="link-card-name">Printr</span>
+                <a href="#" target="_blank" class="link-card">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.17 14.93L7.7 13.8l1.41-1.41 1.72 1.72 4.07-4.07 1.41 1.41-5.48 5.48z"/></svg>
+                    <span class="link-card-name">Uniswap</span>
                 </a>
-                <a href="https://dexscreener.com/solana/9UuQsZ6TtETELDvpHSUZBdbVC4dVfUDwUnPP4cTjbrrr" target="_blank" class="link-card">
+                <a href="#" target="_blank" class="link-card">
                     <img src="img/logo-dexscreener.png" alt="Dexscreener" class="link-icon">
                     <span class="link-card-name">Dexscreener</span>
-                </a>
-                <a href="https://x.com/Doomerprintr" target="_blank" class="link-card">
-                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    <span class="link-card-name">Twitter / X</span>
                 </a>
             </div>
         </div>
@@ -823,7 +819,7 @@
     buildPlaylist();if(playlist.length>0)loadTrack(0);
 
     // ===== COPY CA =====
-    function copyCA(){navigator.clipboard.writeText('9UuQsZ6TtETELDvpHSUZBdbVC4dVfUDwUnPP4cTjbrrr').then(()=>{const l=document.getElementById('ca-copy-label');l.textContent='copied!';l.style.color='#4ade80';setTimeout(()=>{l.textContent='copy';l.style.color='';},2000);});}
+    function copyCA(){navigator.clipboard.writeText('CONTRACT_ADDRESS_HERE').then(()=>{const l=document.getElementById('ca-copy-label');l.textContent='copied!';l.style.color='#4ade80';setTimeout(()=>{l.textContent='copy';l.style.color='';},2000);});}
 
     // ===== NAV =====
     let lastScroll=0;
